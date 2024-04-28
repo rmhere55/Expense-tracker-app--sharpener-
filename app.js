@@ -40,6 +40,7 @@ function displayExpenses(expenses) {
     const deleteButtons = document.getElementsByClassName('delete');
     const editButtons = document.getElementsByClassName('edit');
 
+    // delete   button click event listener 
     for (let i = 0; i < deleteButtons.length; i++) {
         deleteButtons[i].addEventListener('click', function () {
             const index = this.dataset.index;
@@ -48,6 +49,7 @@ function displayExpenses(expenses) {
             displayExpenses(expenses);
         });
     }
+    // edit  button click event listener 
 
     for (let i = 0; i < editButtons.length; i++) {
         editButtons[i].addEventListener('click', function () {
